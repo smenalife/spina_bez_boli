@@ -251,6 +251,21 @@ html.promo-off .reg{display:inline}
 .hero .promo-note{margin-top:26px}
 .final .promo-note{margin:0 auto 32px}
 .final p+.promo-note{margin-top:4px}
+
+.video{padding-block:clamp(56px,8vw,110px)}
+.video .wrap{max-width:1000px}
+.video .head{text-align:center;margin-bottom:clamp(24px,4vw,40px)}
+.video .head .eyebrow{justify-content:center}
+.video h2{margin-bottom:12px}
+.video .head p{max-width:34em;margin:0 auto;color:var(--text);font-size:clamp(16px,2.2vw,19px)}
+.vframe{position:relative;aspect-ratio:16/9;border-radius:clamp(18px,3vw,32px);overflow:hidden;background:var(--deep);box-shadow:0 24px 60px -28px rgba(34,60,64,.45)}
+.vframe img,.vframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:cover;display:block}
+.vplay{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;background:linear-gradient(180deg,rgba(31,48,54,0) 40%,rgba(31,48,54,.35));cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff}
+.vplay span{display:flex;align-items:center;justify-content:center;width:clamp(64px,10vw,92px);height:clamp(64px,10vw,92px);border-radius:50%;background:rgba(246,246,243,.94);color:var(--pine);box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .2s}
+.vplay:hover span{transform:scale(1.06)}
+.vplay svg{width:34%;height:34%;margin-left:6%}
+.vtime{position:absolute;right:14px;bottom:12px;background:rgba(31,48,54,.78);color:#fff;font-size:13px;line-height:1;padding:6px 10px;border-radius:99px;pointer-events:none}
+.video .vcta{display:flex;justify-content:center;margin-top:clamp(24px,4vw,36px)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sky{}.btn,.sky .orb,.sky .bgs i{transition:none}}
 </style>
 
@@ -357,6 +372,20 @@ html.promo-off .reg{display:inline}
     </div>
   </div>
 </section>
+
+<section class="sec s-mist video" id="video">
+  <div class="wrap">
+    <div class="head"><div class="eyebrow">Что внутри курса</div><h2>Так проходят <em>тренировки</em></h2>
+      <p>Короткая нарезка из тренировок курса: спокойный темп и понятные движения. Посмотри, как это выглядит, до покупки.</p></div>
+    <div class="vframe" id="vframe">
+      <img src="https://i.ytimg.com/vi/WJ-HIehbNBU/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/WJ-HIehbNBU/hqdefault.jpg'">
+      <button class="vplay" id="vplay" type="button" aria-label="Смотреть видео"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg></span></button>
+      <div class="vtime">0:55</div>
+    </div>
+    <div class="vcta"><a class="btn" data-pay href="#price">Получить доступ<svg viewBox="0 0 90 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 H84 M72 3 L84 12 L72 21"/></svg></a></div>
+  </div>
+</section>
+
 
 <!-- ВРЕМЯ ДНЯ -->
 <section class="sec s-mist when" id="when">
@@ -588,6 +617,19 @@ if(Date.now()>new Date(2026,10,11,23,59,59).getTime()) document.documentElement.
     if(a){ var sec=a.closest('header,.hero,.card,.final,section'); var place=sec?(sec.tagName==='HEADER'?'header':(sec.className||sec.id||'section').toString().split(' ')[0]):'page'; goal('buy_click',{place:place}); return; }
     if(e.target.id==='copyCode') goal('copy_promo');
   },true);
+})();
+</script>
+
+<script>
+(function(){
+  var b=document.getElementById('vplay'), f=document.getElementById('vframe'); if(!b) return;
+  b.addEventListener('click',function(){
+    var i=document.createElement('iframe');
+    i.src='https://www.youtube-nocookie.com/embed/WJ-HIehbNBU?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+    i.title='Нарезка из тренировок курса'; i.allow='autoplay; encrypted-media; picture-in-picture; fullscreen'; i.setAttribute('allowfullscreen','');
+    f.innerHTML=''; f.appendChild(i);
+    try{ if(window.ym) ym(114110393,'reachGoal','video_play'); }catch(e){}
+  });
 })();
 </script>
 </body>
