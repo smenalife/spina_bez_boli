@@ -3,4 +3,4 @@ Allow: /
 Disallow: /offer.html
 Disallow: /privacy.html
 
-Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
+Sitemap: https://smenalife.github.io/spina_bez_boli/sitemap.xml
