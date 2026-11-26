@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Спина без боли: 10 спокойных тренировок для спины, пожизненный доступ</title>
-<meta name="description" content="Курс из 10 спокойных видеотренировок по 20–30 минут для спины, осанки и расслабления. Запись в закрытом Телеграм-канале, доступ навсегда. До 11.11 скидка 30% по промокоду 1111.">
+<meta name="description" content="Курс из 10 спокойных видеотренировок по 20–30 минут для спины, осанки и расслабления. Запись в закрытом Телеграм-канале, доступ навсегда.">
 <link rel="canonical" href="https://smenalife.github.io/spina_bez_boli/">
 <meta name="theme-color" content="#f6f6f3">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -215,9 +215,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 
   .when h2{font-size:28px}
 }
 .flock{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
-.reg{display:none}
-html.promo-off .promo{display:none!important}
-html.promo-off .reg{display:inline}
 .promo-note{display:inline-flex;align-items:center;gap:10px;background:#fbefea;border:1px solid #efd5cd;color:var(--ink);border-radius:999px;padding:10px 20px;font-size:15px;line-height:1.35;text-align:left}
 .promo-note::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:#d9948f}
 .promo-note b{font-weight:600}
@@ -243,7 +240,7 @@ html.promo-off .reg{display:inline}
 .card .amount{display:flex;align-items:flex-start;gap:0}
 .card .amount small{margin-left:2px;margin-top:.12em;font-size:.34em}
 .card .save{margin:14px 0 26px}
-.card .tag{margin:0 0 28px}
+.card .tag{margin:10px 0 28px}
 .card .was{margin:0 0 14px}
 .code{display:inline-flex;flex-wrap:nowrap;gap:10px;margin:0 0 22px;padding:8px 10px 8px 14px;border-radius:14px;font-size:14px}
 .code b{font-size:20px;letter-spacing:.12em}
@@ -269,13 +266,41 @@ html.promo-off .reg{display:inline}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sky{}.btn,.sky .orb,.sky .bgs i{transition:none}}
 </style>
 
+<style>
+/* ОБО МНЕ */
+.about .grid{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(36px,6vw,88px);margin-top:44px;align-items:start}
+.about .body>*+*{margin-top:22px}.about .body h3{font-size:clamp(22px,2.2vw,27px);margin-top:44px;line-height:1.2}.about .body h3+p{margin-top:14px}
+.about .body p{color:var(--text);line-height:1.75}
+.about .body b{font-weight:600;color:var(--ink)}
+.about .side{display:grid;gap:22px}
+.about .mission{background:var(--deep);color:#fff;border-radius:32px;padding:clamp(30px,4.5vw,52px)}
+.about .mission p{font-family:var(--serif);font-style:italic;font-size:clamp(23px,2.6vw,30px);line-height:1.38;color:#fff}
+.about .mission small{display:block;margin-top:22px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage)}
+.about .learn{background:rgba(255,255,255,.8);border:1px solid #fff;border-radius:28px;padding:clamp(26px,3.5vw,38px)}
+.about .learn h3{font-size:24px;margin-bottom:18px}
+.about .learn ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.about .learn li{position:relative;padding-left:26px;line-height:1.5;color:var(--text)}
+.about .learn li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--moss)}
+.about .learn li b{display:block;font-weight:600;color:var(--ink)}
+.about .note{font-size:15px;color:var(--muted)}
+@media (min-width:900px){.about .grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}.about .side{position:sticky;top:96px}}
+</style>
+<style>
+/* время дня: без закрепления экрана, анимация идёт сама */
+.when{padding-block:clamp(64px,9vw,120px)}
+.when .track{height:auto}
+.when .stick{position:static;height:auto;overflow:visible;display:block}
+.when .time{position:relative}
+.sky .bgs{isolation:isolate;z-index:0}.sky .stars{z-index:1}.sky .orb{z-index:2}.sky img.rg{z-index:3}.sky.live .orb{transition:none}.sky.live .bgs i,.sky.live .stars{transition:none}.sky.live .orb{will-change:left,top}
+@media (max-width:900px){.when .sky{height:min(36svh,320px)}}
+</style>
 </head>
 <body>
 <noscript><div><img src="https://mc.yandex.ru/watch/114110393" style="position:absolute;left:-9999px" alt=""></div></noscript>
 <header>
   <div class="wrap">
     <a class="brand" href="#top">Спина <em>без боли</em></a>
-    <a class="btn small" data-pay href="#price"><span class="promo hb"><b>Купить −30%</b><i>до 11 ноября</i></span><span class="reg">Купить за 50€</span></a>
+    <a class="btn small" data-pay href="#price">Купить за 50€</a>
   </div>
 </header>
 
@@ -288,12 +313,11 @@ html.promo-off .reg{display:inline}
     <h1>Спина<br>без&nbsp;<em>боли</em></h1>
     <p class="sub">10 спокойных тренировок по&nbsp;<span style="white-space:nowrap">20–30 минут</span></p>
     <div class="cta-row">
-      <a class="btn" data-pay href="#price">Получить доступ<span class="reg"> за 50€</span>
+      <a class="btn" data-pay href="#price">Получить доступ за 50€
         <svg viewBox="0 0 90 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 H84 M72 3 L84 12 L72 21"/></svg>
       </a>
       <a class="link" href="#for">Для кого этот курс</a>
     </div>
-    <div class="promo-note promo"><span>До 11.11 скидка <b>30%</b> по промокоду <b>1111</b>: <b>35€</b> вместо 50€</span></div>
   </div>
 </section>
 
@@ -431,7 +455,7 @@ html.promo-off .reg{display:inline}
     <h2>От оплаты до <em>первой тренировки</em></h2>
     <div class="steps">
       <div class="step"><h3>Нажимаешь «Купить»</h3><p>Кнопка на сайте открывает Telegram-бота. Если ты в нём впервые, кнопка «Старт» появится сама, нажми её. Если нет, отправь боту команду /start.</p></div>
-      <div class="step"><h3>Оплачиваешь по ссылке</h3><p>В первом же сообщении бот пришлёт ссылку на оплату. Платить можно картой любого банка любой страны, в том числе России, Украины и Беларуси.</p><p class="promo promo-line">До 11.11 укажи промокод 1111: скидка 30%, курс обойдётся в 35€ вместо 50€.</p><p>Сумма в евро пересчитывается автоматически по курсу на день покупки, при конвертации возможна небольшая комиссия.</p></div>
+      <div class="step"><h3>Оплачиваешь по ссылке</h3><p>В первом же сообщении бот пришлёт ссылку на оплату. Платить можно картой любого банка любой страны, в том числе России, Украины и Беларуси.</p><p>Сумма в евро пересчитывается автоматически по курсу на день покупки, при конвертации возможна небольшая комиссия.</p></div>
       <div class="step"><h3>Заходишь в закрытый канал</h3><p>Доступ приходит моментально после оплаты. Все 10 тренировок лежат в Телеграм-канале в записи, со ссылками на YouTube.</p><p>Видео можно вывести на экран телевизора, так заниматься удобнее.</p></div>
       <div class="step"><h3>Занимаешься, когда удобно</h3><p>Подписка на канал пожизненная, повторных оплат нет. Проходи тренировки хоть каждый день в любое удобное время.</p></div>
     </div>
@@ -443,11 +467,8 @@ html.promo-off .reg{display:inline}
   <div class="wrap">
     <div class="card">
       <div class="eyebrow">Курс «Спина без боли»</div>
-      <div class="was promo"><s>50€</s><b>−30%</b><span>до 11.11</span></div>
-      <div class="amount"><span class="promo">35</span><span class="reg">50</span><small>€</small></div>
-      <div class="save promo">Экономия 15€ по промокоду</div>
+      <div class="amount">50<small>€</small></div>
       <div class="tag">10 тренировок, доступ навсегда</div>
-      <div class="code promo"><span>Промокод</span><b>1111</b><button type="button" id="copyCode">Скопировать</button></div>
       <a class="btn light" data-pay href="#price">Оплатить и получить доступ</a>
       <div class="fine">Оплата картой любого банка любой страны, в том числе России, Украины и Беларуси. Ссылку на оплату пришлёт Telegram-бот, доступ откроется сразу после оплаты</div>
     </div>
@@ -455,22 +476,48 @@ html.promo-off .reg{display:inline}
       <h2>Как <em>оплатить</em></h2>
       <p>Нажми «Купить» на сайте: откроется Telegram-бот. Нажми «Старт» (при первом заходе кнопка появится сама) или отправь команду /start. В первом же сообщении бот пришлёт ссылку на оплату.</p>
       <p>Оплатить можно картой любого банка любой страны, в том числе России, Украины и Беларуси.</p>
-      <div class="promo-box promo"><p><b>До 11.11 скидка 30% по промокоду 1111.</b> Курс стоит 35€ вместо 50€, экономия 15€.</p></div>
       <p>Цена указана в евро и пересчитывается автоматически по курсу на день покупки. Курс и возможная комиссия за конвертацию зависят от банка и платёжной платформы, поэтому итоговая сумма в твоей валюте может немного отличаться.</p>
       <p class="small">Платишь один раз: подписка на закрытый канал с тренировками остаётся навсегда.</p>
     </div>
   </div>
 </section>
 
+<!-- ОБО МНЕ -->
+<section class="sec s-fog about" id="about">
+  <div class="wrap">
+    <div class="eyebrow">Обо мне</div>
+    <h2>Я сама знаю, <em>как болит спина</em></h2>
+    <div class="grid">
+      <div class="body">
+        <h3>С чего всё началось</h3>
+        <p>Первый курс инструктора тренажёрного зала я прошла около десяти лет назад. Новую профессию я тогда не искала. Мне было лет 19–20, и, как многим девочкам, хотелось накачанные ягодицы и плоский живот. Но у меня постоянно болела поясница, иногда побаливали колени, и я понимала, что тренировками могу сделать только хуже. Поэтому пошла учиться: хотела понять, как работает тело и как не навредить своим суставам.</p>
+        <h3>Как я училась дальше</h3>
+        <p>Мне понравилось, и я продолжила. Выучилась на тренера по растяжке, проходила узкие курсы, например по стопам: как сделать их функциональными и как стопа влияет на всё тело и на тренировки. Смотрела вскрытия тел, их делают для врачей, массажистов и фитнес-тренеров, чтобы лучше понимать, как устроено тело. Всё это время я тренировалась сама и составляла программы для себя. Подопечных у меня не было.</p>
+        <p>Потом я познакомилась с пилатесом (как ни странно, не с йогой) и выучилась на специалиста по движению. Стала укреплять кор. Затем изучала, как на состояние, настроение и уровень стресса влияют дыхание, работа со зрительным и блуждающим нервами, и постепенно добавляла это в свои тренировки.</p>
+        <h3>Метод, который я люблю, но не даю новичкам</h3>
+        <p>Во время коронавируса я нашла тренера со смесью силовой йоги, функционального тренинга и мобилити. Тренировки были безумно сложные: через 10–15 минут я была мокрая, а выдержать целый час получалось не всегда. Я не раз бросала их, искала что-то новое, но каждый раз возвращалась. В итоге пришла к нему учиться и освоила его метод. Его особенность: тренировки по картам, что вытащили, то и делаем. Новичкам я такое не даю, сначала мы долго готовимся. В курсе «Спина без боли» из этого нет ничего: всё просто, плавно и спокойно, мы даже не потеем.</p>
+        <h3>Почему курс именно такой</h3>
+        <p>Большую часть жизни у меня сидячая работа, и я хорошо знаю, как быстро начинает болеть спина, если мало двигаешься. Стоит мне перестать заниматься, и боль возвращается очень быстро. Двигаться нужно постоянно, и это бывает непросто. Поэтому «Спина без боли» — <b>комфортный первый шаг</b>, чтобы приучить себя к движению. 20 минут — это недолго. Никуда не нужно собираться, не нужен зал и специальная одежда. Расстели коврик, сползи с дивана на пол, и можно заниматься.</p>
+        <p class="note">Курс не лечит болезни. При сильной боли сначала сходи к врачу: нужно снять болевой синдром и воспаление. А когда станет легче, можно начинать мягкие тренировки.</p>
+      </div>
+      <div class="side">
+        <div class="mission">
+          <p>Тело даётся один раз на всю жизнь. Движение — это гигиена тела, чтобы чувствовать себя хорошо и двигаться свободно, без боли.</p>
+          <small>Моя мысль</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
-<section class="sec s-fog faq" id="faq">
+<section class="sec s-mist faq" id="faq">
   <div class="wrap">
     <div class="eyebrow">Частые вопросы</div>
     <h2>Что <em>спрашивают</em> чаще всего</h2>
     <div class="qa">
       <details><summary>Как проходит оплата?</summary><p>Нажимаешь «Купить» на сайте, и открывается Telegram-бот. Нажми «Старт» (при первом заходе кнопка появится сама) или отправь команду /start. В первом же сообщении бот пришлёт ссылку на оплату, платить можно картой любого банка любой страны, в том числе России, Украины и Беларуси. После оплаты доступ к каналу открывается сразу.</p></details>
-      <details class="promo"><summary>Как получить скидку 30%?</summary><p>До 11.11 введи промокод 1111 при оплате: курс будет стоить 35€ вместо 50€, экономия 15€. Платить можно картой любого банка любой страны, в том числе России, Украины и Беларуси.</p></details>
-      <details><summary>Сколько стоит курс?</summary><p>Курс стоит 50€, а до 11.11 по промокоду 1111 действует скидка 30%: 35€ вместо 50€, экономия 15€. Оплатить можно картой любого банка любой страны, в том числе России, Украины и Беларуси. Сумма пересчитывается автоматически по курсу на день покупки, при конвертации возможна комиссия, итог в твоей валюте может немного отличаться.</p></details>
+      <details><summary>Сколько стоит курс?</summary><p>Курс стоит 50€. Оплатить можно картой любого банка любой страны, в том числе России, Украины и Беларуси. Сумма пересчитывается автоматически по курсу на день покупки, при конвертации возможна комиссия, итог в твоей валюте может немного отличаться.</p></details>
       <details><summary>Когда придёт доступ?</summary><p>Сразу после оплаты. Доступ к закрытому Телеграм-каналу моментальный.</p></details>
       <details><summary>На какой срок доступ?</summary><p>На всю жизнь. Один раз подписываешься на канал, повторных оплат нет.</p></details>
       <details><summary>Где лежат тренировки и как их смотреть?</summary><p>Все 10 тренировок лежат в записи в закрытом Телеграм-канале, со ссылками на YouTube. Видео можно вывести на экран телевизора, так заниматься удобнее.</p></details>
@@ -486,8 +533,8 @@ html.promo-off .reg{display:inline}
 <section class="final" id="start">
   <div class="wrap">
     <h2>Начни с <em>первой тренировки</em></h2>
-    <p>10 спокойных тренировок по 20–30 минут и доступ навсегда.</p>
-    <div class="promo-note promo"><span>До 11.11 скидка <b>30%</b> по промокоду <b>1111</b>: <b>35€</b> вместо 50€</span></div><br class="promo">
+    <p>10 спокойных тренировок по 20–30 минут и доступ навсегда за 50€.</p>
+
     <a class="btn" data-pay href="#price">Получить доступ
       <svg viewBox="0 0 90 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12 H84 M72 3 L84 12 L72 21"/></svg>
     </a>
@@ -560,17 +607,36 @@ function smooth(p){
   }
   document.querySelectorAll('.time').forEach(function(t){ t.addEventListener('click',function(){ set(+t.getAttribute('data-i')); }); });
   set(0);
-  var track=document.getElementById('whenTrack'), cur=-1, tk=false;
-  function onScroll(){
-    var r=track.getBoundingClientRect(), range=r.height-(window.innerHeight-68), p=Math.min(1,Math.max(0,-(r.top-68)/Math.max(1,range)));
-    var i=Math.min(3,Math.floor(p*4)); if(i!==cur){ cur=i; set(i); }
+  var raf=0, manual=false, t0=0, CYCLE=8000, PH=0, skyEl=sky;
+  var OC=[[248,230,223,70,30,243,200,190,.7],[255,251,233,80,36,255,255,255,.9],[244,207,198,80,34,235,170,170,.6],[244,241,230,40,14,220,230,255,.45]];
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sm(x){ return x*x*(3-2*x); }
+  function frame(now){
+    if(!t0) t0=now-PH*CYCLE/4;
+    var f=(((now-t0)/CYCLE)*4)%4, k=Math.floor(f), fr=sm(f-k), n=(k+1)%4;
+    orb.style.left=(st[k][0]+(st[n][0]-st[k][0])*fr)+'%';
+    orb.style.top=(st[k][1]+(st[n][1]-st[k][1])*fr)+'%';
+    var lin=f-k;
+    bgs.forEach(function(b,i){ b.style.opacity=(i===k?1:(i===n?lin:0)); b.style.zIndex=(i===n?2:1); });
+    stars.style.opacity=(k===3?1-lin:(n===3?lin:0));
+    var near=lin>.5?n:k, A=OC[k], B=OC[n];
+    function L(i){ return A[i]+(B[i]-A[i])*lin; }
+    orb.style.background='rgb('+Math.round(L(0))+','+Math.round(L(1))+','+Math.round(L(2))+')';
+    orb.style.boxShadow='0 0 '+L(3).toFixed(1)+'px '+L(4).toFixed(1)+'px rgba('+Math.round(L(5))+','+Math.round(L(6))+','+Math.round(L(7))+','+L(8).toFixed(3)+')';
+    document.querySelectorAll('.time').forEach(function(t,i){ t.setAttribute('aria-pressed',i===near?'true':'false'); });
+    PH=f; raf=requestAnimationFrame(frame);
   }
-  window.addEventListener('scroll',function(){ if(!tk){ tk=true; requestAnimationFrame(function(){ tk=false; onScroll(); }); } },{passive:true});
-  window.addEventListener('resize',onScroll);
-  document.querySelectorAll('.time').forEach(function(t){ t.addEventListener('click',function(){
-    var i=+t.getAttribute('data-i'), top=track.getBoundingClientRect().top+window.pageYOffset, range=track.offsetHeight-(window.innerHeight-68);
-    window.scrollTo({top:top-68+range*(i+.5)/4,behavior:'smooth'}); }); });
-  onScroll();
+  function start(){ if(raf||manual||reduce) return; skyEl.classList.add('live'); t0=0; raf=requestAnimationFrame(frame); }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf=0; } }
+  function manualSet(i){
+    manual=true; stop(); skyEl.classList.remove('live');
+    bgs.forEach(function(b){ b.style.opacity=''; b.style.zIndex=''; }); stars.style.opacity='';
+    set(i);
+  }
+  document.querySelectorAll('.time').forEach(function(t){ t.addEventListener('click',function(){ manualSet(+t.getAttribute('data-i')); }); });
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) start(); else stop(); }); },{threshold:.3}).observe(sky);
+  }
 })();
 
 
@@ -603,10 +669,6 @@ function smooth(p){
   var tk=false; window.addEventListener('scroll',function(){ if(!tk){ tk=true; requestAnimationFrame(function(){ tk=false; draw(); }); } },{passive:true});
   window.addEventListener('resize',layout); layout();
 })();
-if(Date.now()>new Date(2026,10,11,23,59,59).getTime()) document.documentElement.classList.add('promo-off');
-(function(){ var b=document.getElementById('copyCode'); if(!b) return;
-  b.addEventListener('click',function(){ var done=function(){ b.textContent='Скопировано'; setTimeout(function(){ b.textContent='Скопировать'; },2000); };
-    try{ navigator.clipboard.writeText('1111').then(done,done); }catch(e){ done(); } }); })();
 </script>
 
 <script>
@@ -615,7 +677,6 @@ if(Date.now()>new Date(2026,10,11,23,59,59).getTime()) document.documentElement.
   document.addEventListener('click',function(e){
     var a=e.target.closest&&e.target.closest('[data-pay]');
     if(a){ var sec=a.closest('header,.hero,.card,.final,section'); var place=sec?(sec.tagName==='HEADER'?'header':(sec.className||sec.id||'section').toString().split(' ')[0]):'page'; goal('buy_click',{place:place}); return; }
-    if(e.target.id==='copyCode') goal('copy_promo');
   },true);
 })();
 </script>
